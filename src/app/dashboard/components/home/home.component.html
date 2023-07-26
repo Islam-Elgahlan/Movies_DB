@@ -1,0 +1,42 @@
+<!-- start Movies -->
+<div class="row">
+  <div class="col-md-4">
+    <div>
+      <div class="brdr w-25"></div>
+      <h4>Trending</h4>
+      <h4>Movies</h4>
+      <h4>To Watch Now</h4>
+      <div class="brdr w-100"></div>
+    </div>
+  </div>
+  <div *ngFor="let item of trendingMovies" class="col-md-2 my-2">
+    <div>
+      <img class="w-100 mb-2" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{item.poster_path}}">
+      <h5>{{item.name}}{{item.title}}</h5>
+      <button class="btn btn-info"><a class="text-white" routerLink="/details/{{item.media_type}}/{{item.id}}">see more </a></button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Start TV Shows -->
+
+<div class="row">
+  <div class="col-md-4">
+    <div>
+      <div class="brdr w-25"></div>
+      <h4>Trending</h4>
+      <h4>TV Shows</h4>
+      <h4>To Watch Now</h4>
+      <div class="brdr w-100"></div>
+    </div>
+  </div>
+  <div *ngFor="let item of trendingTvs" class="col-md-2 my-2">
+    <div>
+      <img class="w-100 mb-2" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{item.poster_path}}">
+      <h5>{{item.name}}{{item.title}}</h5>
+      <button class="btn btn-info"><a class="text-white" routerLink="/details/{{item.media_type}}/{{item.id}}">see more </a></button>
+    </div>
+  </div>
+</div>
+

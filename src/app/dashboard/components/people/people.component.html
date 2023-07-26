@@ -1,0 +1,12 @@
+<!-- start people -->
+
+<h1 class="text-center">Peoples</h1>
+<div class="row">
+  <div *ngFor="let people of peoples" class="col-md-2 my-2">
+    <div>
+      <img class="w-100 mb-2" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{people.profile_path}}">
+      <h5>{{people.name}}</h5>
+    </div>
+  </div>
+</div>
+

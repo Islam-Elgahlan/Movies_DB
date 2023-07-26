@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-4">
+    <img class="w-100" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{itemDetails.poster_path}}">
+  </div>
+  <div class="col-md-8">
+    <div>
+      <h2>{{itemDetails.name}}{{itemDetails.title}}</h2>
+      <h3>Title : {{itemDetails.original_title}}</h3>
+
+      <button *ngFor="let type of itemDetails.genres" class="btn btn-info mx-2 my-2">{{type.name}}</button>
+
+      <h3>vote_average : {{itemDetails.vote_average}}</h3>
+      <h3>vote_count : {{itemDetails.vote_count}}</h3>
+      <p>{{itemDetails.overview}}</p>
+    </div>
+  </div>
+</div>
